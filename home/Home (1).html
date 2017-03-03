@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function hitme() {
+            
+            var fname = document.getElementById("first").value;
+
+             var lname = document.getElementById("last").value;
+            
+             var email = document.getElementById("mail").value;
+            
+             var password = document.getElementById("pswd").value;
+
+
+             document.getElementById("fname").innerHTML = fname;
+             document.getElementById("lname").innerHTML = lname;
+             document.getElementById("email").innerHTML = email;
+       
+           
+             
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    
+   <div class="container">
+       <div class="col-lg-4"></div>
+       <div class="col-lg-4" style="border:1px solid lightblue">
+        <!--   <div class="jumbotron" style="margin-top:100px">-->
+               
+          
+                   <div class="panel panel-info" >
+                       <div class="panel-heading">
+                           <div class="panel-title text-center">Sign Up </div>
+                       </div>
+                       </div>
+                   <div>
+                       <div class="input-group col-sm-10">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                   <input type="text" class="form-control" id="first" placeholder="First Name" />
+                               </div>
+                           <br />
+
+                               <div class="input-group col-sm-10">
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                   <input type="text" class="form-control" id="last" placeholder="Last Name" />
+                               </div>
+                           <br />
+                       
+                      
+                     
+                               <div class="input-group col-sm-10">
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                   <input type="text" class="form-control" id="mail" placeholder="Email" />
+                               </div>
+                     <br />
+                   <div class="input-group col-sm-10">
+                                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                   <input type="password" class="form-control" id="pswd" placeholder="password" />
+
+                               </div>
+                        <div class="checkbox">
+                           <label><input type="checkbox" />Remember me</label>
+                       </div>
+                       <div>
+                           <button type="button" class="btn btn-info btn-lg col-sm-11" id="#" onclick="hitme()">Register Now</button>
+                       
+                       </div><br/>
+                       <div>
+                           <p class="text-center">Back</p>
+                       </div>
+
+                    </div>
+       </div>    
+       <div class="col-lg-4"></div>
+  
+   </div>
+
+    <div class="container">
+        <div id="fname" style="color:red"> My Name is : </div>
+        <div id="lname" style="color:darkred"> my last name is:</div>
+        <div id="email" style="color:antiquewhite">my email is:</div>
+        
+
+    </div>
+      
+    
+</body>
+
+</html>
